@@ -66,8 +66,4 @@
     <None Include="wwwroot\lib\bootstrap\js\bootstrap.min.js.map" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
 </Project>

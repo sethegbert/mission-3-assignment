@@ -2,19 +2,19 @@
 
     //make sure user enters valid values
 
-    if (($("#assignments").val() < 0) || ($("#assignments").val() > 100) || ($("#groupprojects").val() < 0) || ($("#groupprojects").val() > 100) ||
-        ($("#quizzes").val() < 0) || ($("#quizzes").val() > 100) || ($("#exams").val() < 0) || ($("#exams").val() > 100) ||
-        ($("#intex") < 0).val() || ($("#intex").val() > 100)) {
+    //if (($("#assignments").val() < 0) || ($("#assignments").val() > 100) || ($("#groupprojects").val() < 0) || ($("#groupprojects").val() > 100) ||
+    //    ($("#quizzes").val() < 0) || ($("#quizzes").val() > 100) || ($("#exams").val() < 0) || ($("#exams").val() > 100) ||
+    //    ($("#intex") < 0).val() || ($("#intex").val() > 100)) {
 
-        alert("Please enter values between 0 and 100.")
+    //    alert("Please enter values between 0 and 100.")
 
-    }
+    //}
 
     /*calculate the final grade percentage based on weights provided in learning suite*/
 
-    else {
+    /*else {*/
         result = (($("#assignments").val() * .55) + ($("#groupprojects").val() * .05) + ($("#quizzes").val() * .10) + ($("#exams").val() * .20) + ($("#intex").val() * .10));
-    }
+    /*}*/
     //determine the letter grade associated with the calculated value
 
     if (result >= 94) {
@@ -57,3 +57,5 @@
 
     alert("Final Grade: " + result + " (" + letter + ")")
 })
+
+console.log("test")
